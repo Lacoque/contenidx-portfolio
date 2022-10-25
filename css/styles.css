@@ -11699,9 +11699,38 @@ body {
   padding: 5rem 0;
 }
 
+/*       Estilos personalizados     */
+
 .portada {
   font-weight: 400;
   font-size: 3rem;
   text-transform: uppercase;
   color: #fff;
+}
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  /* background-color:#25d366; */
+  border: 2px solid #25d366;
+  color:#25d366;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp:hover {
+  border: 2px solid #50817e;
+  box-shadow:
+  inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.whatsapp-icon {
+  margin-top:13px;
 }
