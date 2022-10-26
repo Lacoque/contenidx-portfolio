@@ -11702,9 +11702,9 @@ body {
 /*       Estilos personalizados     */
 
 .portada {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 3rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fff;
 }
 
