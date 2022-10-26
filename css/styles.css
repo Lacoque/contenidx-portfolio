@@ -11704,7 +11704,10 @@ body {
 .portada {
   font-weight: 700;
   font-size: 3rem;
+ 
+  letter-spacing: -0.5px;
   /* text-transform: uppercase; */
+  
   color: #fff;
 }
 
@@ -11712,8 +11715,8 @@ body {
   position:fixed;
   width:60px;
   height:60px;
-  bottom:40px;
-  right:40px;
+  bottom:2rem;
+  right:2rem;
   /* background-color:#25d366; */
   border: 2px solid #25d366;
   color:#25d366;
