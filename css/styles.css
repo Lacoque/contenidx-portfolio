@@ -11749,10 +11749,31 @@ body {
 
 .contact-form-section{
   padding: 10rem 0;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg"); */
   background-color: #895558;
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #895558 100%);
+  /*background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover; 
+  background-size: cover;  */
+}
+
+.form-group{
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+.form-width{
+  width: 45vw;
+  /* border: 1px solid #000; */
+  background-color: #959595;
+  border-radius: 5px;
+  padding: 5rem;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.bg-contact
+{
+  background-color: #895558;
 }
