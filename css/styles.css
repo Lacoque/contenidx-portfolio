@@ -11762,8 +11762,8 @@ body {
   padding-bottom: 1.2rem;
 }
 
-.form-width{
-  width: 45vw;
+.form-width {
+  width: 40vw;
   /* border: 1px solid #000; */
   background-color: #959595;
   border-radius: 5px;
@@ -11771,6 +11771,47 @@ body {
   box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+  /* Source mixins*/
+
+  /*No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`*/
+  /* @include media-breakpoint-up(sm) { 
+    .form-width{
+      width: 90vw;
+    }
+  }
+  @include media-breakpoint-up(md) { 
+    .form-width{
+      width: 90vw;
+    }
+  }
+  @include media-breakpoint-up(lg) { 
+    .form-width{
+      width: 45vw;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .form-width{
+      width: 60vw;
+    }
+   }
+  @include media-breakpoint-up(xxl) {
+    .form-width{
+      width: 50vw;
+    }
+  } */
+}
+
+@media (max-width: 576px) {
+  .form-width {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-width {
+    width: 65vw;
+  }
 }
 
 .bg-contact
