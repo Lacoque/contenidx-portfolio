@@ -11737,12 +11737,13 @@ body {
 }
 
 .div-cita {
-  background-color: #909090;
+  background-color: #F2F2F2;
+  height: 80vh;
 }
 
 .cita {
   font-weight: 500;
-  font-variant: small-caps;
+  letter-spacing: -0.5px;
 }
 
 .contact-form-section{
@@ -11835,4 +11836,8 @@ body {
   background-color: rgba(192, 24, 26, .5);
   border: 0px solid #fff;
   color: #fff;
+}
+
+.card:hover{
+  box-shadow: #000;
 }
