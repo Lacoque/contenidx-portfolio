@@ -11724,8 +11724,18 @@ body {
   z-index:100;
 }
 
+.whatsapp svg {
+  position: relative;
+  top:5px;
+}
+
+/* .whatsapp svg:hover{
+  color: #67c29c;
+} */
+
 .whatsapp:hover {
-  border: 2px solid #50817e;
+  border: 2px solid #000 !important;
+  color: #000;
   /* box-shadow:
   inset 0 -3em 3em rgba(0,0,0,0.1),
         0 0  0 2px rgb(255,255,255),
@@ -11890,3 +11900,54 @@ p {
 .post-services-section p {
   margin-bottom: 5rem;
 }
+
+.iconos-rrss {
+  position:fixed;
+  top: 50%;
+  width: 5rem;
+  height: auto  ;
+  right:.6rem;
+  flex-direction: column;
+  align-items: center;
+  z-index:100;
+}
+
+.iconos-rrss p {
+  position:fixed;
+  top: 65%;
+  width: auto;
+  height:auto;
+  right:.3rem;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: .9rem;
+
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.iconos-rrss a, i {
+  color: #fff;
+}
+
+.iconos-rrss svg:hover{
+  color: #8b96f3;
+  /* display: none; */
+}
+
+/* 
+.seguinos{
+  position:fixed;
+  top: 65%;
+  width: auto;
+  height:auto;
+  right:.6rem;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: .9rem;
+
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+} */
