@@ -11606,7 +11606,8 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 0.8) 100%);
+  background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%);
+  padding-bottom: 20vh;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -12000,4 +12001,64 @@ p {
   font-weight: 400;
   letter-spacing: -0.2px;
   text-transform: uppercase;
+}
+
+/* .prueba-back{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+
+  background-image: url(../assets/img/background-hero.jpg);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+} */
+
+.nosotrxs{
+  position: relative;
+  margin: auto 0;
+  padding: 0 0;
+  width: 50%;
+  height: 20vh;
+  
+  /* background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(176,41,41,1) 47%, rgba(222,0,0,0) 100%);
+   */
+  /* background-color: #0d6efd; */
+  border-radius: 5px;
+}
+
+.nosotrxs img{
+  width: auto;
+  height: 20vh;
+  border-radius: 5px;
+}
+
+.nosotrxs h3, h4, h5, h6, p {
+  font-family: var(--bs-body-font-family);
+  color: #fff;
+  letter-spacing: -0.005rem;  
+}
+
+.nosotrxs p {
+  font-weight: 200;
+}
+
+.sliders{
+  margin-left: 4rem;
+  text-align: justify;
+  display: block;
+  /* flex-wrap: no-wrap; */
+}
+
+.bg-slide{
+  height: 20.5vh;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  /* background-color: rgb(157, 68, 181); */
+  /* background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(176,41,41,1) 47%, rgba(222,0,0,1) 100%); */
 }
