@@ -11723,6 +11723,7 @@ body {
   text-align:center;
   font-size:30px;
   z-index:100;
+  mix-blend-mode: darken;
 }
 
 .whatsapp svg {
@@ -11908,7 +11909,7 @@ p {
 .elements-bar.right {
   right: 2.75vh;
 }}
-  @media screen and (min-width: 769px){
+@media screen and (min-width: 769px){
 .elements-bar.right {
   -webkit-transform-origin: right top;
   -ms-transform-origin: right top;
@@ -11932,6 +11933,9 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  
+  /*Transición de background*/
+	mix-blend-mode:exclusion;
 }
 .-unlist {
   margin: 0;
@@ -11986,10 +11990,10 @@ p {
   margin: 0 5px;
 }
 .social-bar svg {
-  color: #fff;
+  color: white;
 }
 .social-bar svg:hover{
-  color: #000;
+  color: yellow;
 }
 .-unlist {
   margin: 0;
@@ -12002,20 +12006,6 @@ p {
   letter-spacing: -0.2px;
   text-transform: uppercase;
 }
-
-/* .prueba-back{
-  position: relative;
-  width: 100%;
-  height: 30vh;
-
-  background-image: url(../assets/img/background-hero.jpg);
-  background-position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-} */
 
 .nosotrxs{
   position: relative;
@@ -12045,6 +12035,12 @@ p {
 
 .nosotrxs p {
   font-weight: 200;
+}
+
+@media screen and (max-width: 600px) {
+	.nosotrxs {
+		width: 100%;
+	}
 }
 
 .sliders{
