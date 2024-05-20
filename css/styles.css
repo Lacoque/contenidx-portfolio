@@ -8018,6 +8018,10 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bgd-contenidx{
+  color: #f7f7f9;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -8065,6 +8069,15 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+
+.project-row{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);}
+
+.project-row:hover{
+  -webkit-filter: none;
+  filter: grayscale(0%);
 }
 
 .user-select-all {
@@ -11702,6 +11715,10 @@ body {
 
 /*       Estilos personalizados     */
 
+.nv-single-page-wrap{
+  padding: 0px;
+}
+
 .portada {
   font-weight: 700;
   font-size: 3rem;
@@ -11748,10 +11765,32 @@ body {
   margin-top:13px;
 }
 
-.titulo-cards {
+.title-cards {
   color: #fff;
   font-weight: 400;
   letter-spacing: -0.5px;
+}
+
+.title-cards-service {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: .95;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+.value-card-services{
+  /* border: solid #1a2ab2 2px; */
+  background-color: #1a2ab2;
+  border-radius: 5px;
+}
+
+portfolio-card-1{
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+portfolio-card-0{
+  border-radius: 0px 10px 10px 0px !important;
 }
 
 .contact-form-section{
@@ -11823,7 +11862,8 @@ body {
 
 .bg-contact
 {
-  background-color: #895558;
+  /* background-color: #895558; */
+  background-color: #808080;
 }
 
 .interletrado{
@@ -11850,9 +11890,10 @@ body {
   box-shadow: #000;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Rubik', sans-serif;
+h1,h2,h3,h4,h5,h6, li, p, i, a {
+    font-family: 'Rubik', sans-serif !important;
 }
+
 p {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
@@ -11873,13 +11914,25 @@ p {
   
   text-decoration: none;
   letter-spacing: -0.3px;
-  /* border: 1px solid #808080; */
   border-radius: 2px;
-  backdrop-filter: blur(5px);
+
+  display: flex;
+  place-content: center;
 }
 
 .btn-lineal-card:hover{
-  /* background-color: rgba(192, 24, 26, .1); */
+  border: 0px solid transparent;
+  color: rgba(256, 256, 256, 1.0);
+}
+.btn-lineal-card a {
+  font-weight: 600;
+  color: #999999;
+  
+  text-decoration: none;
+  letter-spacing: -0.3px;
+  border-radius: 2px;
+}
+.btn-lineal-card a:hover{
   border: 0px solid transparent;
   color: rgba(256, 256, 256, 1.0);
 }
@@ -12122,16 +12175,14 @@ p {
   position: relative;
 }
 .card0 {
-  background: url("../assets/img/PamelaLacoque.jpeg") center center no-repeat;
+  background: url("../assets/img/Pame-CX-Web.jpg") center center no-repeat;
   background-size: 300px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
 }
 .card0:hover {
-  background: url("../assets/img/PamelaLacoque.jpeg") left center no-repeat;
+  background: url("../assets/img/Pame-CX-Web.jpg") left center no-repeat;
   background-size: 600px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 .card0:hover h2 {
   opacity: 1;
@@ -12140,11 +12191,11 @@ p {
   opacity: 1;
 }
 .card1 {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+  background: url("../assets/img/Nahue-CX-Web.jpg") center center no-repeat;
   background-size: 300px;
 }
 .card1:hover {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+  background: url("../assets/img/Nahue-CX-Web.jpg") left center no-repeat;
   background-size: 600px;
 }
 .card1:hover h2 {
@@ -12181,3 +12232,4 @@ p {
   fill: #fff;
   color: #fff;
 }
+
