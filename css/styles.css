@@ -66,6 +66,15 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --cx-rojo: #C11718;
+  --cx-azul: #1584C2;
+  --cx-azul-hover: #106191;
+  --cx-blanco:#F4F4F4;
+  --cx-negro:#404040;
+  --cx-gris-luz: #D9DADA;
+  --cx-gris-oscuro:#808080;
+  --cx-violeta:#CC2AC6;
+  --cx-gradiente-1: linear-gradient(to bottom, rgba(204, 42, 198, 0.6) 0%, rgba(192, 24, 26, 1) 100%);
 }
 
 *,
@@ -4056,7 +4065,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #2236e4;
+  color: var(--cx-azul);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -11527,10 +11536,13 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--cx-azul);
+    /* color: rgba(255, 255, 255, 0.5); */
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--cx-azul-hover);
+    font-weight: 700;
+    /* color: rgba(255, 255, 255, 0.75); */
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11627,7 +11639,8 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  /* padding: 10rem 0 0rem 0rem; */
+  background-color: var(--cx-blanco);
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11652,6 +11665,13 @@ body {
     width: 30%;
   }
 }
+
+/* @media (hover:hover) {
+  .projects-section:hover{
+    background: var(--cx-gris-luz);
+    transition: all 0.6s;
+  }
+} */
 
 .signup-section {
   padding: 10rem 0;
@@ -11723,7 +11743,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: -0.9px;
-  /* text-transform: uppercase; */
+  line-height: 0.95;
   color: #fff;
 }
 
@@ -12159,21 +12179,30 @@ p {
 .border-card:hover{
   border: 1px solid #fff;
 }
-.card {
-  height: 379px;
-  /* height: 50vh; */
-  width: 300px;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 70px 63px -60px #000;
+.card-proyectos {
   display: flex;
+  position: relative;
+  width: 300px;
+  min-width: 0;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-direction: column;
+  word-wrap: break-word;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  background: var(--cx-azul);
+  background-clip: border-box;
 }
+
+@media (hover:hover) {
+  .wpp:hover{
+    background-color: var(--cx-azul-hover);
+    transition: all 1s;
+  }
+}
+
 .card0 {
   background: url("../assets/img/Pame-CX-Web.jpg") center center no-repeat;
   background-size: 300px;
@@ -12242,16 +12271,21 @@ p {
 .card-portfolio {
   width: 195px;
   height: 285px;
-  background: #313131;
+  background: var(--cx-gris-luz);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--cx-rojo);
   transition: 0.2s ease-in-out;
   overflow: hidden; /* Agregado para recortar contenido desbordante */
   position: relative; /* Asegura que el posicionamiento absoluto de .img-portfolio funcione correctamente */
+}
+
+.card-body > h4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
 }
 
 .img-portfolio {
@@ -12278,6 +12312,7 @@ p {
   gap: 15px;
   transition: 0.2s ease-in-out;
   z-index: 2;
+  margin: auto 1rem;
 }
 
 .textBox > .text {
@@ -12294,7 +12329,11 @@ p {
 
 .textBox > span {
   font-size: 12px;
-  color: lightgrey;
+  color: var(--cx-negro);
+}
+
+.textBox > p {
+  color: var(--cx-negro);
 }
 
 .card-portfolio:hover > .textBox {
@@ -12334,11 +12373,57 @@ p {
   flex-wrap: wrap;
   place-content: center;
   margin-top: 10rem;
-
-  /* border: 1px solid #fff; */
+  background-color: var(--cx-blanco);
 }
 
 .card-section a {
   margin: 1.5rem 2.5rem;
 }
 
+.bg-gris{
+  background-color: var(--cx-gris-oscuro) !important;
+}
+
+.bg-blanco {
+  background-color: var(--cx-blanco);
+}
+
+.trabajos{
+  width: 20vw;
+}
+
+.trabajos-realizados{
+  align-items: flex-end;
+  padding: 10rem 0rem 2rem 0rem;
+}
+
+.trabajos-realizados h2,
+.llamada-portfolio h2,
+.trabajos-realizados p {
+  color: var(--cx-azul)
+}
+
+@media (hover:hover){
+    .trabajos-realizados:hover{
+      background: var(--cx-gris-luz);
+      transition: all ease-in-out 1s;
+  }
+}
+.btn-lineal-portfolio {
+  padding: 1.5rem 3rem;
+  border: 1px solid var(--cx-azul);
+  border-radius: 5px;
+  color: var(--cx-azul);
+
+  text-decoration: none;
+}
+
+.btn-lineal-portfolio:hover{
+  background-color: var(--cx-azul-hover);
+  color: var(--cx-blanco);
+  transition: all ease-in-out 0.6s;
+}
+
+.boton-footer-wpp a{
+  text-decoration: none;
+}

@@ -11656,7 +11656,7 @@ body {
   margin-bottom: 5rem;
 }
 
-.projects-section {
+/* .projects-section {
   padding: 10rem 0;
 }
 .projects-section .featured-text {
@@ -11683,7 +11683,7 @@ body {
 	  width: 100%;
 	  margin-top: 3rem;
   }
-}
+} */
 
 .signup-section {
   padding: 10rem 0;
@@ -11922,7 +11922,7 @@ portfolio-card-0{
   color: #fff;
 }
 
-.btn-lineal-portfolio {
+/* .btn-lineal-portfolio {
   padding: 1.5rem 3rem;
   border: 1px solid #2236e4;
   border-radius: 5px;
@@ -11937,7 +11937,7 @@ portfolio-card-0{
   background-color: rgba(22, 43, 165, .5);
   border: 0px solid #1a2ab2;
   color: #1a2ab2;
-}
+} */
 
 .card:hover{
   box-shadow: #000;
