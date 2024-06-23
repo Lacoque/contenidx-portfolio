@@ -11597,13 +11597,12 @@ body {
   border: 0;
 }
 
-.masthead {
+/* .masthead {
 	position: relative;
 	width: 100%;
 	height: auto;
 	min-height: 35rem;
 	padding: 15rem 0;
-/* 	background: linear-gradient(46deg, #E72C2C 0%, #CC2AC6 100%), url("https://contenidx.com.ar/wp-content/uploads/2023/09/Portada-Contenidx-1-scaled.jpg"); */
 	background: linear-gradient(to bottom, rgba(204, 42, 198, 0.6) 0%, rgba(192, 24, 26, 1) 100%), url("https://contenidx.com.ar/wp-content/uploads/2023/09/Portada-Contenidx-1-scaled.jpg");
  
 	background-position: center;
@@ -11645,7 +11644,7 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
-}
+} */
 
 .about-section {
   padding-top: 10rem;
