@@ -11536,16 +11536,14 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: var(--cx-azul);
-    /* color: rgba(255, 255, 255, 0.5); */
+    color: rgba(255, 255, 255);
   }
   #mainNav .nav-link:hover {
-    color: var(--cx-azul-hover);
+    color: var(--cx-negro);
     font-weight: 700;
-    /* color: rgba(255, 255, 255, 0.75); */
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: var(--cx-azul);
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
@@ -12464,24 +12462,22 @@ p {
 .boton-footer-wpp a{
   text-decoration: none;
 }
-/*
-Theme Name:     Neve-Child (Realizado por contenidx)
-Theme URI:      https://themeisle.com/themes/neve/ (Ésta url es del theme padre)
-Author:         Contenidx
-Author URI:     https://contenidx.com.ar
-Template:       neve
-Description:    Neve-child es la versipon hijo del tema Neve. Auí aplicamos personalizaciones.
-Version:        1.0.0
-License:        GNU General Public License v2 or later
-License URI:    http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:    neve-child
-Pro Slug:  		neve-pro-addon
-AMP: 			true
-WordPress Available:  yes
-Requires License:     no
-*/
 
-@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
 * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2022 Start Bootstrap
@@ -24014,17 +24010,24 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
+  /* .page-project #mainNav {
+    background-color: var(--cx-azul);
+  } */
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
-  #mainNav .nav-link {
+  .page-project #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--cx-azul);
+    /* color: rgba(255, 255, 255, 0.5); */
   }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+  @media (hover:hover) {
+    .page-project #mainNav .nav-link:hover {
+      color: var(--cx-azul-hover);
+      font-weight: 700;
+    }
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -24871,6 +24874,16 @@ button:hover svg {
 
 .formulario button:active {
   transform: scale(0.95);
+}
+
+.formulario > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formulario > form button{
+  margin: 1rem 0rem 2rem;
 }
 
 @keyframes fly-1 {
