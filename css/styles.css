@@ -11627,15 +11627,6 @@ body {
   }
 }
 
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%);
-  padding-bottom: 20vh;
-}
-.about-section p {
-  margin-bottom: 5rem;
-}
-
 .projects-section {
   /* padding: 10rem 0 0rem 0rem; */
   background-color: var(--cx-blanco);
@@ -11768,14 +11759,6 @@ body {
   letter-spacing: -0.5px;
 }
 
-.title-cards-service {
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  line-height: .95;
-  font-size: 200%;
-  text-transform: uppercase;
-}
-
 .value-card-services{
   /* border: solid #1a2ab2 2px; */
   background-color: #1a2ab2;
@@ -11808,7 +11791,7 @@ portfolio-card-0{
 .contact-form-section{
   display: flex;
   place-content: center;
-  padding: 10rem 0;
+  padding: 4rem 0rem 5rem;
   background: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.5) 75%, #808080 100%);
 }
 
@@ -11930,13 +11913,6 @@ p {
 .btn-lineal-card a:hover{
   border: 0px solid transparent;
   color: rgba(256, 256, 256, 1.0);
-}
-
-.card-services {
-  border-radius: 19px;
-  background: linear-gradient(145deg, #243af4, #1f31cd);
-  box-shadow:  30px 30px 59px #1928a9,
-               -30px -30px 59px #2b44ff;
 }
 
 .section-section {
@@ -12422,12 +12398,6 @@ p {
   color: var(--cx-azul)
 }
 
-@media (hover:hover){
-    .trabajos-realizados:hover{
-      background: var(--cx-gris-luz);
-      transition: all ease-in-out 1s;
-  }
-}
 .btn-lineal-portfolio {
   padding: 1.5rem 3rem;
   border: 1px solid var(--cx-azul);
@@ -12446,7 +12416,10 @@ p {
 
 @media (max-width:960px) {
   .btn-lineal-portfolio{
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -16642,10 +16615,15 @@ textarea.form-control-lg {
 }
 
 .navbar-brand img {
-width: 13vw;
+  width: 13vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:960){
+  .navbar-brand img {
+    width: 35vw;
+  }
 }
 
 .navbar-nav {
@@ -24090,92 +24068,14 @@ body {
   border: 0;
 }
 
-/* .masthead {
-	position: relative;
-	width: 100%;
-	height: auto;
-	min-height: 35rem;
-	padding: 15rem 0;
-	background: linear-gradient(to bottom, rgba(204, 42, 198, 0.6) 0%, rgba(192, 24, 26, 1) 100%), url("https://contenidx.com.ar/wp-content/uploads/2023/09/Portada-Contenidx-1-scaled.jpg");
- 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
-}
-.masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-.masthead h2, .masthead .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
-} */
-
 .about-section {
-  padding-top: 10rem;
+  padding-top: 4rem;
   background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%);
   padding-bottom: 20vh;
 }
 .about-section p {
   margin-bottom: 5rem;
 }
-
-/* .projects-section {
-  padding: 10rem 0;
-}
-.projects-section .featured-text {
-  padding: 2rem;
-}
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #2236e4;
-  }
-}
-.projects-section .project-text {
-	padding: 3rem;
-	font-size: 90%;
-}
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-  .projects-section .project-text hr {
-	  border-color: #fff;
-/*     border-color: #2236e4; */
-/*	  border-width: 0.25rem;
-	  width: 100%;
-	  margin-top: 3rem;
-  }
-} */
 
 .signup-section {
   padding: 10rem 0;
@@ -24309,19 +24209,28 @@ body {
 }
 
 .value-card-services{
-  /* border: solid #1a2ab2 2px; */
   background-color: #1a2ab2;
   border-radius: 5px;
 }
-
-portfolio-card-1{
-  border-radius: 0px 10px 10px 0px !important;
+.formas-pago-info{
+  font-weight: 300;
+  line-height: 1.25rem;
+  font-size: .905rem;
+  margin: .5rem 2rem 1rem;
+  color: #00f787;
 }
-
-portfolio-card-0{
-  border-radius: 0px 10px 10px 0px !important;
+.formas-pago-info a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #00f787;
+  padding: .3rem;
 }
-
+@media (hover:hover) {
+  .formas-pago-info a:hover {
+    color: #fff;
+    transition: all .35s;
+  }
+}
 
 .form-group{
   padding-top: 1rem;
@@ -24366,23 +24275,6 @@ portfolio-card-0{
   box-shadow: 0px 5px 10px #590607;
   transition: all .5s;
 }
-
-/* .btn-lineal-portfolio {
-  padding: 1.5rem 3rem;
-  border: 1px solid #2236e4;
-  border-radius: 5px;
-  color: #2236e4;
-
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-}
-
-.btn-lineal-portfolio:hover{
-	padding: 2rem 3.5rem;
-  background-color: rgba(22, 43, 165, .5);
-  border: 0px solid #1a2ab2;
-  color: #1a2ab2;
-} */
 
 .card:hover{
   box-shadow: #000;
@@ -24436,10 +24328,22 @@ p {
 }
 
 .card-services {
+  height: 80vh;
+
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
   border-radius: 19px;
   background: linear-gradient(145deg, #243af4, #1f31cd);
   box-shadow:  30px 30px 59px #1928a9,
                -30px -30px 59px #2b44ff;
+}
+@media (max-width:960px) {
+  .card-services{
+    height: auto;
+    justify-content: start;
+  }
 }
 
 #products {
@@ -24830,7 +24734,7 @@ p {
 }
 
 .cards-items ul{
-	line-height: 1rem;
+	line-height: 1.35rem;
 	padding: 0rem 2rem;
 }
 
