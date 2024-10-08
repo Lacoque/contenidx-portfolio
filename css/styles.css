@@ -24979,6 +24979,7 @@ button:hover svg {
   color: var(--cx-negro);
   letter-spacing: -1px;
 }
+<<<<<<< Updated upstream
 @media (max-width:960px){
   .inactivo-descripcion-texto{
     flex-direction: column;
@@ -24987,6 +24988,8 @@ button:hover svg {
     width: auto;
   }
 }
+=======
+>>>>>>> Stashed changes
 
 .inactivo-img{
   object-fit: cover;

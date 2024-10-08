@@ -56,10 +56,17 @@ window.addEventListener('DOMContentLoaded', event => {
 window.addEventListener('scroll', function() {
     var imgElement = document.getElementById('marca-cx-menu-nav');
 
+<<<<<<< Updated upstream
     if (window.scrollY < 50 ) {
         imgElement.src = '../assets/img/marca-contenidx-blanco.png';
     } else {
         imgElement.src = '../assets/img/marca-contenidx-rojo.png';
+=======
+    if (window.scrollY > 50 ) {
+        imgElement.src = '../assets/img/marca-contenidx-rojo.png';
+    } else {
+        imgElement.src = '../assets/img/marca-contenidx-blanco.png';
+>>>>>>> Stashed changes
     }
 });
 
