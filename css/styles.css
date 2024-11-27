@@ -24950,6 +24950,6 @@ button:hover svg {
 
 /* Metricool */
 .metricool {
-  visibility: hidden;
+  display: none;
 }
 /* Fin Metricool */
