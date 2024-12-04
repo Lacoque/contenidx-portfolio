@@ -11585,7 +11585,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(192, 24, 26, 0.3) 0%, rgba(192, 24, 26, 0.7) 75%, #C0181A 100%), url("../assets/img/Portada-Contenidx.jpg");
+  background: linear-gradient(180deg, rgba(228,44,58,0.3) 0%, rgba(208,42,177,0.65) 100%), url("../assets/img/Portada-Contenidx-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11624,6 +11624,15 @@ body {
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
+  }
+}
+@media (max-width:960px) {
+  .masthead {
+  background: linear-gradient(180deg, rgba(228,44,58,0.3) 0%, rgba(208,42,177,0.65) 100%), url("../assets/img/Portada-Contenidx-2-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   }
 }
 
@@ -17114,6 +17123,21 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+}
+
+.icon-gral{
+  height: 3.5vh !important;
+}
+
+.redes .icon-gral {
+  opacity: .4;
+  transition: all .3s;
+}
+
+@media (hover:hover) {
+  .redes a:hover .icon-gral{
+    opacity: 1;
+  }
 }
 
 .card-title {
@@ -24070,7 +24094,8 @@ body {
 
 .about-section {
   padding-top: 4rem;
-  background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%);
+  /* background: linear-gradient(to bottom, #C0181A 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%); */
+  background: linear-gradient(to bottom, rgb(208 100 187) 0%, rgba(192, 24, 26, 0.9) 75%, rgba(192, 24, 26, 1) 100%);
   padding-bottom: 20vh;
 }
 .about-section p {
@@ -24124,13 +24149,16 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
 }
 .contact-section .social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 .contact-section .social a:active {
   color: #fff;
+}
+.contact-section .social p {
+  color: rgb(255, 255, 255, .8);
 }
 
 .footer {
@@ -24501,6 +24529,15 @@ p {
 
 .nosotrxs p {
   font-weight: 200;
+}
+
+@media (max-width:960px) {
+  section#nosotrxs p.col-3.text-start.align-items-start.text-white-50.d-flex.flex-column.gap-1{
+    width: 100%;
+    padding: 0rem 1.33rem;
+  }
+  /* section#nosotrxs .col-3 p {
+  } */
 }
 
 @media screen and (max-width: 600px) {
