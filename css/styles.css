@@ -12138,7 +12138,7 @@ p {
   position: relative;
 }
 .border-card:hover{
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 .card-proyectos {
   display: flex;
@@ -24610,7 +24610,7 @@ p {
   position: relative;
 }
 .border-card:hover{
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 .card {
   height: 379px;
@@ -24626,13 +24626,13 @@ p {
   position: relative;
 }
 .card0 {
-  background: url("../assets/img/Pame-CX-Web.jpg") center center no-repeat;
+  background: url("../assets/img/Pame-CX-Web-2025.png") center center no-repeat;
   background-size: 300px;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
 }
 .card0:hover {
-  background: url("../assets/img/Pame-CX-Web.jpg") left center no-repeat;
+  background: url("../assets/img/Pame-CX-Web-2025.png") left center no-repeat;
   background-size: 600px;
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
