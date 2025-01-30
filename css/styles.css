@@ -25179,7 +25179,8 @@ div.horizontal-cards {
   width: 70%;
   margin: 2rem 0rem;
   padding: 1rem;
-  color: var(--cx-blanco)
+  color: var(--cx-blanco);
+  border-left: 2px solid var(--cx-blanco);
 }
 
 .horizontal-cards a.card-basic .out {
@@ -25239,7 +25240,10 @@ div.horizontal-cards {
     background: #0019ff;
   }
   .horizontal-cards a.card-basic:hover h5.talk {
-    color: #0019ff;
+    color: var(--cx-blanco);
+    background-color: #0019ff;
+    border-radius: 5px;
+    border-left: 0px;
   }
 }
 
