@@ -66,6 +66,9 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+}
+
+:root{
   --cx-rojo: #C11718;
   --cx-azul: #1584C2;
   --cx-azul-hover: #106191;
@@ -2427,7 +2430,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); */
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
@@ -11592,12 +11595,12 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: -.1rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -11609,6 +11612,7 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
     line-height: 4rem;
+    letter-spacing: -.1rem;
   }
 }
 @media (min-width: 992px) {
@@ -11617,13 +11621,16 @@ body {
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+    font-size: 5.5rem;
+    line-height: 4.8rem;
+    letter-spacing: -.36rem;
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
+  }
+  .masthead #texto-accion-portada {
+    width: 65%;
   }
 }
 @media (max-width:960px) {
@@ -11769,18 +11776,17 @@ body {
 }
 
 .value-card-services{
-  /* border: solid #1a2ab2 2px; */
   background-color: #1a2ab2;
   border-radius: 5px;
 }
 
-portfolio-card-1{
+/* portfolio-card-1{
   border-radius: 0px 10px 10px 0px !important;
 }
 
 portfolio-card-0{
   border-radius: 0px 10px 10px 0px !important;
-}
+} */
 
 .ilustracion-msj{
   background-color: var(--bs-gray-400);
@@ -12136,9 +12142,6 @@ p {
   border-radius: 10px;
   transition: border 1s;
   position: relative;
-}
-.border-card:hover{
-  /* border: 1px solid #fff; */
 }
 .card-proyectos {
   display: flex;
@@ -24367,6 +24370,10 @@ p {
   box-shadow:  30px 30px 59px #1928a9,
                -30px -30px 59px #2b44ff;
 }
+.card-services h4 {
+  color: #F4F4F4;
+  text-transform: uppercase;
+}
 @media (max-width:960px) {
   .card-services{
     height: auto;
@@ -24609,9 +24616,7 @@ p {
   transition: border 1s;
   position: relative;
 }
-.border-card:hover{
-  /* border: 1px solid #fff; */
-}
+
 .card {
   height: 379px;
   width: 300px;
@@ -24644,7 +24649,7 @@ p {
   opacity: 1;
 }
 .card1 {
-  background: url("../assets/img/Nahue-CX-Web.jpg") center center no-repeat;
+  background: url("../assets/img/Nahue-CX-Web-2025.png") center center no-repeat;
   /* -webkit-filter: grayscale(100%); */
   /* filter: grayscale(100%); */
   background-size: 300px;
@@ -24655,7 +24660,7 @@ p {
 	}
 }
 .card1:hover {
-  background: url("../assets/img/Nahue-CX-Web.jpg") left center no-repeat;
+  background: url("../assets/img/Nahue-CX-Web-2025.png") left center no-repeat;
   background-size: 600px;
 }
 .card1:hover h2 {
@@ -24937,12 +24942,6 @@ button:hover svg {
   height: auto;
 }
 
-#inactivo-proyecto {
-  /* padding: 1rem;
-  border-radius: 10px;
-  background-color: #c9cbcb; */
-}
-
 #inactivo-proyecto h1 {
   color: var(--cx-negro);
   letter-spacing: -.5px;
@@ -24990,3 +24989,314 @@ button:hover svg {
   display: none;
 }
 /* Fin Metricool */
+
+
+
+
+
+/* Cards */
+
+section.services-cards {
+  /* height: 100svh; */
+  display: flex;
+  flex-direction: column;
+  background-color: #2236e4;
+}
+
+section.services-cards > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+}
+
+div.vertical-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+}
+
+a.card-basic {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* padding: 1rem 3.5rem 2.5rem; */
+  width: 100%;
+  text-decoration: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #243af4, #1f31cd);
+  box-shadow: 30px 30px 59px #1928a9, -30px -30px 59px #2b44ff;
+
+  transition: all .3s;
+}
+
+a.card-basic h1,
+a.card-basic h3,
+a.card-basic li,
+a.card-basic p  {
+  color: #F4F4F4;
+}
+a.card-basic h1{
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: calc(2rem - 20%);
+  letter-spacing: -.05rem;
+  text-transform: uppercase;
+  padding: .8rem 2rem 0rem;
+}
+
+a.card-basic h3{
+  font-weight: 600;
+  letter-spacing: -.13rem;
+  text-transform: uppercase;
+}
+
+a.card-basic li, 
+a.card-basic p  {
+  font-weight: 200;
+}
+
+a.card-basic ul, 
+a.card-basic p  {
+  padding: 2rem;
+}
+
+a.card-basic p  {
+  font-size: 1.015rem;
+}
+
+.service-number {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  margin: 0;
+}
+
+.service-number h5 {
+  font-size: .85rem;
+  width: fit-content;
+  opacity: 0;
+  color: var(--cx-blanco);
+  border: 2px solid var(--cx-blanco);
+  border-radius: 7.5px;
+  padding:.5rem .9rem;
+  margin: 0rem;
+
+  transition: all .7s;
+}
+
+a.card-basic div.card-value {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  margin: 0rem 2rem 1rem;
+  border-radius: 5px;
+  background-color: #1D2FC8;
+
+  transition: all .3s;
+}
+a.card-basic div.card-value h3,
+a.card-basic div.card-value p  {
+  margin: 0;
+  padding: 0rem;
+}
+
+a.card-basic div.man {
+  justify-content: center;
+}
+
+a.card-basic div.man h5 {
+  margin: 0rem;
+}
+
+a.card-basic p.man-text {
+  font-size: .9rem;
+  text-align: start;
+  font-weight: 400;
+  line-height: 100%;
+
+  color: #f4f4f4b5;
+
+  display: flex;
+  justify-content: center;
+  padding: 0rem 3.2rem;
+}
+
+div.horizontal-cards {
+  padding: 1rem 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+
+.horizontal-cards a.card-basic {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 3rem;
+  justify-content: space-around;
+  align-items: center;
+
+  text-decoration: none;
+  
+  color: var(--cx-blanco);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #243af4, #1f31cd);
+  box-shadow: 30px 30px 59px #1928a9, -30px -30px 59px #2b44ff;
+
+  transition: all .3s;
+}
+
+.horizontal-cards > a.card-basic div.hr {
+  height: 103.95px;
+  width: 6px;
+  background: #F4F4F430;
+  /* background-color: #1D2FC8; */
+}
+
+.horizontal-cards > a.card-basic > div.hand-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background-color: var(--cx-blanco);
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+.horizontal-cards > a.card-basic > div.hand-icon > svg {
+  color: #0019ff !important;
+  transition: all .3s;
+}
+
+.horizontal-cards a.card-basic h5.talk {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  color: var(--cx-blanco);
+  border-left: 2px solid var(--cx-blanco);
+}
+
+.horizontal-cards a.card-basic .out {
+  margin: 2rem;
+  width: 100%;
+}
+
+.horizontal-cards a.card-basic .out h5 {
+  font-weight: 300;
+  padding: 0rem 2rem;
+}
+.horizontal-cards a.card-basic .out h5 > span {
+  font-weight: 600;
+}
+
+.horizontal-cards a.card-basic .out p:first-of-type {
+  padding: 0rem 2rem;
+}
+
+@media (hover:hover) {
+  a.card-basic:hover {
+    transform: scale(1.03);
+    background: linear-gradient(145deg, #0019ff, #1a2587);
+    z-index: 999;
+  }
+  a.card-basic:hover div.card-value {
+    background-color: #f4f4f420;
+  }
+  a.card-basic:hover .service-number h5 {
+    opacity: 1;
+  }
+  a.card-basic:hover p.man-text {
+    color: #f4f4f4b5;
+  }
+  .horizontal-cards a.card-basic:hover {
+    background: linear-gradient(115deg, #f4f4f4, #ababab);
+  }
+  .horizontal-cards a.card-basic:hover .hand-icon{
+    background-color: transparent;
+    border-radius: 0px;
+    border-right: 2px solid #0019ff;
+  }
+  .horizontal-cards a.card-basic:hover div.out h1,
+  .horizontal-cards a.card-basic:hover div.out h5, 
+  .horizontal-cards a.card-basic:hover div.out p {
+    color: #0019ff !important;
+  }
+  .horizontal-cards a.card-basic:hover div.out h5, 
+  .horizontal-cards a.card-basic:hover div.out p {
+    font-weight: 500;
+    letter-spacing: -0.015rem;
+  }
+  .horizontal-cards a.card-basic:hover .out h5 > span {
+    font-weight: 700;
+  }
+  .horizontal-cards > a.card-basic:hover div.hr {
+    background: #0019ff;
+  }
+  .horizontal-cards a.card-basic:hover h5.talk {
+    color: var(--cx-blanco);
+    background-color: #0019ff;
+    border-radius: 5px;
+    border-left: 0px;
+  }
+}
+
+@media (max-width: 60em) {
+  .group-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .vertical-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem !important;
+  }
+  .horizontal-cards {
+    padding: 1rem !important;
+  }
+  .horizontal-cards a.card-basic {
+    padding: 1rem !important;
+    flex-direction: column;
+    background: linear-gradient(115deg, #f4f4f4, #ababab);
+  }
+  
+  .horizontal-cards a.card-basic div.hand-icon{
+    display: none !important;
+    /* background-color: transparent;
+    border-radius: 0px;
+    border-right: 2px solid #0019ff; */
+  }
+  .horizontal-cards a.card-basic div.out h1,
+  .horizontal-cards a.card-basic div.out h5, 
+  .horizontal-cards a.card-basic div.out p {
+    color: #0019ff !important;
+  }
+  .horizontal-cards a.card-basic div.out h5, 
+  .horizontal-cards a.card-basic div.out p {
+    font-weight: 500;
+    letter-spacing: -0.015rem;
+  }
+  .horizontal-cards a.card-basic .out h5 > span {
+    font-weight: 700;
+  }
+  .horizontal-cards > a.card-basic div.hr {
+    background: #0019ff;
+  }
+  .horizontal-cards a.card-basic h5.talk {
+    font-size: 1.3rem;
+    width: 100%;
+    color: var(--cx-blanco);
+    background-color: #0019ff;
+    border-radius: 5px;
+    border-left: 0px;
+  }
+}
+
+
+/* Fin Cards */
