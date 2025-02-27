@@ -34,29 +34,75 @@
         
 
         <!-- esquema para el SEO-->
-        <script type = "application/ld+json" > 
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "WebSite",
-                    "name": "Contenido",
-                    "description": "creador de paginas web",
-                    "url": "https://contenidx.com.ar/"
-                }
-                </script>
-                <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "Organization",
-                    "name": "Contenido",
-                    "url": "https://contenidx.com.ar/",
-                    "logo": "https://contenidx.com.ar/favicon.png",
-                    "contactPoint": {
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "Organization",
+                "name": "Contenido",
+                "url": "https://contenidx.com.ar/",
+                "logo": "https://contenidx.com.ar/favicon.png",
+                "contactPoint": [
+                    {
                         "@type": "ContactPoint",
                         "email": "contenidx@gmail.com",
-                        "contactType": "desarrollo web"
+                        "contactType": "desarrollo web",
+                        "areaServed": ["AR", "UY", "CL"]
                     }
-                }
-        </script>
+                ],
+                "sameAs": [
+                    "https://www.facebook.com/contenidx/",
+                   "https://www.instagram.com/contenidx/",
+                    "https://www.linkedin.com/company/dise%C3%B1oydesarrolloweb/?viewAsMember=true"
+                ],
+                "location": [
+                    {
+                        "@type": "Place",
+                        "name": "Argentina",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Obelisco",
+                            "addressLocality": "Buenos Aires",
+                            "addressCountry": "AR"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "-34.6037",
+                            "longitude": "-58.3816"
+                        }
+                    },
+                    {
+                        "@type": "Place",
+                        "name": "Uruguay",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Plaza Independiente",
+                            "addressLocality": "Montevideo",
+                            "addressCountry": "UY"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "-34.9011",
+                            "longitude": "-56.1645"
+                        }
+                    },
+                    {
+                        "@type": "Place",
+                        "name": "Chile",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Plaza de Armas",
+                            "addressLocality": "Santiago",
+                            "addressCountry": "CL"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "-33.4489",
+                            "longitude": "-70.6693"
+                        }
+                    }
+                ]
+            }
+            </script>
 
 
     </head>
