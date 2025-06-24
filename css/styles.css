@@ -24936,6 +24936,9 @@ button:hover svg {
 
 .inactivo-img{
   object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .inactivo-img img{
   width: 100%;
