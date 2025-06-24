@@ -26,7 +26,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Animation fade -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
 
@@ -133,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </nav>
-       
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-start">
@@ -152,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </header>
 
-        <!-- About-->
+        <!-- Nosotres-->
         <section class="container-fluid about-section text-center" id="nosotrxs">
             <div class="px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -216,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </ul>
                         </div>
                         <div class="card-value">
-                            <h3>$ 310.000</h3>
+                            <h3>$ 356.500</h3>
                             <p>Pesos ARG</p>
                         </div>
                     </a>
@@ -234,10 +233,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li>Autogestionable: Tienda web, bolsa de trabajo, blog de noticias, etc.</li>
                                 <li>Optimización para los motores de busqueda.</li>
                                 <li>Seguridad del sitio.</li>
+                                <li>Mantenimiento y acompañamiento tecnico por 3 meses post-lanzamiento</li>
                             </ul>
                         </div>
                         <div class="card-value">
-                            <h3>$ 440.000</h3>
+                            <h3>$ 506.000</h3>
                             <p>Pesos ARG</p>
                         </div>
                     </a>
@@ -331,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="text-black my-4">Escribinos para contarnos tus ideas</p>
                         <div class="">
                             <div class="formulario">
-                                <form name="contact" method="POST" data-netlify="true">
+                                <form name="contact" action="/" method="POST" data-netlify="true">
                                     <p>
                                         <label><input placeholder="Nombre" type="text" name="Nombre" /></label>
                                     </p>
@@ -462,5 +462,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         AOS.init();
         </script>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+              e.preventDefault(); 
+              const form = e.target;
+              const data = new FormData(form);
+              data.append('form-name', 'contact'); 
+          
+              fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(data).toString()
+              })
+              .then(() => {
+              
+                window.location.reload();
+              })
+              .catch(error => {
+               
+                alert('Hubo un error. Por favor, intenta de nuevo.');
+                console.error(error);
+              });
+            });
+          </script>
     </body>
 </html>
