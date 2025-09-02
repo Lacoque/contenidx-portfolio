@@ -12167,64 +12167,7 @@ p {
   }
 }
 
-.card0 {
-  background: url("../assets/img/Pame-CX-Web.jpg") center center no-repeat;
-  background-size: 300px;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
-}
-.card0:hover {
-  background: url("../assets/img/Pame-CX-Web.jpg") left center no-repeat;
-  background-size: 600px;
-}
-.card0:hover h2 {
-  opacity: 1;
-}
-.card0:hover .fa {
-  opacity: 1;
-}
-.card1 {
-  background: url("../assets/img/Nahue-CX-Web.jpg") center center no-repeat;
-  background-size: 300px;
-}
-.card1:hover {
-  background: url("../assets/img/Nahue-CX-Web.jpg") left center no-repeat;
-  background-size: 600px;
-}
-.card1:hover h2 {
-  opacity: 1;
-}
-.card1:hover .fa {
-  opacity: 1;
-}
-.card h2 {
-  font-weight: 100;
-  letter-spacing: -0.5px;
-  color: #fff;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.fa {
-  opacity: 0;
-  transition: opacity 1s;
-}
-.icons {
-  position: absolute;
-  fill: #fff;
-  color: #fff;
-  height: 100px;
-  top: 226px;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.icons a{
-  fill: #fff;
-  color: #fff;
-}
+
 
 
 
@@ -24631,16 +24574,12 @@ p {
   position: relative;
 }
 .card0 {
-  background: url("../assets/img/Pame-CX-Web-2025.png") center center no-repeat;
+  background: url("../assets/img/Pame-CX.png") center center no-repeat;
   background-size: 300px;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
 }
 .card0:hover {
-  background: url("../assets/img/Pame-CX-Web-2025.png") left center no-repeat;
-  background-size: 600px;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
+  background: url("../assets/img/Pame-CX.png") left center no-repeat;
+  background-size: 450px;
 }
 .card0:hover h2 {
   opacity: 1;
@@ -24649,7 +24588,7 @@ p {
   opacity: 1;
 }
 .card1 {
-  background: url("../assets/img/Nahue-CX-Web-2025.png") center center no-repeat;
+  background: url("../assets/img/Nahue-CX.png") center center no-repeat;
   /* -webkit-filter: grayscale(100%); */
   /* filter: grayscale(100%); */
   background-size: 300px;
@@ -24660,8 +24599,8 @@ p {
 	}
 }
 .card1:hover {
-  background: url("../assets/img/Nahue-CX-Web-2025.png") left center no-repeat;
-  background-size: 600px;
+  background: url("../assets/img/Nahue-CX.png") left center no-repeat;
+  background-size: 450px;
 }
 .card1:hover h2 {
   opacity: 1;
@@ -24672,10 +24611,10 @@ p {
 .card h2 {
   font-weight: 100;
   letter-spacing: -0.5px;
-  color: #000;
+  color: #fff;
   margin: 20px;
   opacity: 0;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 .fa {
   opacity: 0;
