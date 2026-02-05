@@ -24616,6 +24616,13 @@ p {
   opacity: 0;
   transition: all 1s;
 }
+p.ideal {
+  font-weight: 500 !important;
+  background: #4459ff;
+  padding: 1rem;
+  border-radius: 5px;
+  line-height: 1.095rem;
+}
 .fa {
   opacity: 0;
   transition: opacity 1s;
